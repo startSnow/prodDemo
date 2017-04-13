@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title></title>
+</head>
+<body>
+<div th:fragment="header">
+
+<script type="text/javascript"  th:src="@{/webjars/jquery/1.11.1/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/webjars/kendo/2014.1.416/js/kendo.all.min.js}"></script>
+<script type="text/javascript"  th:src="@{/webjars/kendo/2014.1.416/js/cultures/kendo.zh-CN.js}"></script>
+<script type="text/javascript"  th:src="@{/webjars/kendo/2014.1.416/js/cultures/kendo.culture.zh-CN.min.js}"></script>
+<link rel="stylesheet"  type="text/css" href="./webjars/kendo/2014.1.416/css/kendo.common.min.css" />
+ <link rel="stylesheet" href="/webjars/kendo/2014.1.416/css/kendo.rtl.min.css" />
+<link href="./webjars/kendo/2014.1.416/css/kendo.bootstrap.min.css" rel="stylesheet" />
+</div>
+</body>
+</html>

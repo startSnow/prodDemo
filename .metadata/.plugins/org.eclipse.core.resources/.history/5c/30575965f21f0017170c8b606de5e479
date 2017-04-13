@@ -1,0 +1,33 @@
+	<div class="pane-content" th:fragment="menu">
+		<ul id="panelbar"  >
+			<li th:each="menu: ${menus}" class="k-state-active"   
+				th:attr="onclick='load(\''+${menu.menuUrl}+'\');'"><span
+				th:text="${menu.menuName}"  ></span>
+				<ul>
+					<li th:each="menuChildren:${menu.children}"  
+						th:attr="onclick='load(\''+${menuChildren.menuUrl}+'\');'"><span 	th:text="${menuChildren.menuName}">
+						</span>
+						</li>
+				</ul></li>
+		</ul>
+			<script th:inline="javascript">
+		/*<![CDATA[*/
+		$(document).ready(function() {
+			$("#panelbar").kendoPanelBar({
+				expandMode : "single",
+				select: expandCollapse
+			});
+		});
+		function expandCollapse(e) {
+		    if ($(e.item).is(".k-state-active")) {
+		        var that = this;
+		        window.setTimeout(function(){that.collapse(e.item);}, 1);
+		    }
+		}
+		function load(url) {
+			$("#right").load(url);
+		}
+		/*]]>*/
+	</script>
+	</div>
+

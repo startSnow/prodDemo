@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Unicorn Admin</title>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" href="../css/styles.css" />
+		<link rel="stylesheet" href="../css/unicorn.main.css" />
+		<link rel="stylesheet" href="../css/unicorn.grey.css" class="skin-color" />
+        <link rel="stylesheet" href="../css/uniform.css" />
+		<link rel="stylesheet" href="../css/select2.css" />
+        <link rel="stylesheet" href="css/fullcalendar.css" />
+        <link rel="stylesheet" href="../css/jquery.gritter.css" />	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+	<body>
+    <!--改动的代码范围-->
+		<div id="header">
+          <div id="in-sub-nav">
+          <div class="in-sub-navimg"> <img src="../img/logo.png"/></div>
+          
+          <i id="sidebar_btn" class="icona icon-align-justify"></i>
+              <div class="container">
+                <div>
+                  <div class="" id="row_nav" style="width:auto;">
+                     <ul>
+                      <li><a href="tables.html"><i class="icon icon-th"></i>表格</a></li>
+                      <li><a href="form.html"><i class="icon icon-edit"></i>表单</a></li>
+                      <li><a href="index.html" class="active"><i class="icon icon-magnet"></i>界面元素</a></li>
+                      <li><a href="buttons.html"><i class="icon icon-book"></i>附加</a></li>
+                      <li><a href="layout.html"><i class="icon icon-eye-open"></i>布局</a></li>
+                    </ul>
+                  </div>
+                  <div id="search">
+                  	<i class="icon-search icon-white searchtb iconmar"></i>
+            		<div class="searchtext" style="display:none;">
+                    	<input class="test" type="text" placeholder="Search here..." /><button type="submit" class="tip-right" title="Search"><i class="icon-search icon-white"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+		</div>
+        <div class="leftnav">
+			<div class="sidebar_close">
+                 <ul id="sidebar_close">
+                
+                  <li class="mar_top"><a href="tables.html"><i class="icon icon-th"></i></a></li>
+                  <li class="lihove_pen"><a href="form.html"><i class="icon icon-edit"></i></a>
+                        <ul class="sidebar_closepen">
+                            <li class="bornone"><a href="error403.html">Pencil1</a>	</li>
+                            <li class="bornone"><a href="buttons.html">Pencil2</a>	 </li>
+                            <li class="bornone"><a href="buttons.html">Pencil3</a>	</li>
+                            <li class="bornone"><a href="buttons.html">Pencil4</a>	</li>
+                            <li class="bornone"><a href="buttons.html">Pencil5</a>	</li>
+                        </ul>
+                  
+                  </li>
+                  <li class="lihove active"><a href="index.html"><i class="icon icon-magnet"></i></a>
+                        <ul class="sidebar_closexl">
+                        	<li class="bornone"><a href="error403.html">报错提示</a> </li>
+                            <li class="bornone"><a href="buttons.html">按钮</a> </li>
+                            <li class="bornone"><a href="tree.html">树样式</a></li>
+                            <li class="bornone"><a href="tab.html">选项卡</a></li>
+                            <li class="bornone"><a href="blockquotes.html" class="acli">面包屑</a></li>
+                            <li class="bornone"><a href="search.html">搜索</a></li>
+                            <li class="bornone"><a href="pagination.html">分页</a></li>
+                            <li class="bornone"><a href="lhgdialog.html">弹出层</a></li>
+                            <li class="bornone"><a href="richtext.html">富文本</a></li>
+                            <li class="bornone"><a href="my97datapicker.html">日期</a></li>
+                            <li class="bornone"><a href="lhgdialog.html">弹出层</a></li>
+                            <li class="bornone threemenus"><a href="my97datapicker.html">文件上传<span class="label">2</span></a>
+                            	<ul class="sidebar_closepen_list">
+                                    <li class="bornone"><a href="upload1.html">批量上传</a>	</li>
+                                    <li class="bornone"><a href="upload2.html">限制文件类型</a>	</li>
+                                </ul>
+                            </li>
+                        </ul>
+                  </li>       
+                  <li><a href=""><i class="icon icon-book"></i></a></li>
+                  <li><a href="layout.html"><i class="icon icon-eye-open"></i></a></li>   
+                </ul>
+            </div>
+		<div id="sidebar">
+			<a href="#" class="visible-phone"><i class="icon icon-inbox"></i> Widgets</a>
+
+			<ul id="sidebar_open">
+            	<li style="margin-top:82px;"><a href="tables.html" class="borleft"><i class="icon icon-th"></i> <span>表格/列表</span><i class="ft">Tables</i></a></li>
+                <li><a href="form.html" class="borleft"><i class="icon icon-edit"></i> <span>表单</span><i class="ft">Forms</i></a></li>
+				<li class="submenu active">
+					<a href="#" class="borleft"><i class="icon icon-magnet"></i> <span>界面元素</span> <i class="ft">Dashboard</i><span class="label">11</span></a>
+					<ul id="djcd">
+						<li class="bornone" style="margin-top:10px;"><a href="error403.html">报错提示<i class="ft">error</i></a> </li>
+                        <li class="bornone"><a href="buttons.html">按钮<i class="ft">Buttons</i></a> </li>
+                        <li class="bornone"><a href="tree.html">树样式<i class="ft">Tree</i></a></li>
+                        <li class="bornone"><a href="tab.html">选项卡<i class="ft">Tabs</i></a></li>
+                        <li class="bornone"><a href="blockquotes.html" class="acli">面包屑<i class="ft">Blockquotes</i></a></li>
+                        <li class="bornone"><a href="search.html">搜索<i class="ft">Tabs</i></a></li>
+                        <li class="bornone"><a href="pagination.html">分页<i class="ft">Pagination</i></a></li>
+                        <li class="bornone"><a href="lhgdialog.html">弹出层<i class="ft">Popup</i></a></li>
+                        <li class="bornone"><a href="richtext.html">富文本<i class="ft">Texts</i></a></li>
+                        <li class="bornone"><a href="my97datapicker.html">日期<i class="ft">Date</i></a></li>
+                        <li class="bornone"><a href="upload1.html">文件批量上传<i class="ft">Upload</i></a></li>
+                        <li class="bornone"><a href="upload2.html">限制文件类型<i class="ft">Uploadtype</i></a></li>
+					</ul>
+
+				</li>
+				<li><a href="" class="borleft"><i class="icon icon-book"></i> <span>附加</span><i class="ft">Extra</i></a></li>
+				<li><a href="layout.html" class="borleft"><i class="icon icon-eye-open"></i> <span>布局</span><i class="ft">layout</i></a></li>
+				<li>
+					<a href="#" class="sub borleft"><i class="icon icon-pencil"></i> <span>菜单</span> <i class="ft">Dashboard</i><span class="label">4</span></a>
+					<ul id="ejcd" class="djcd" style="background:#2f3844;">
+						<li class="borsolid"><a href="" class="erji">分类<i class="ft">Classify</i></a> </li>
+                        <li class="borsolid"><a href="#" class="erji yjan">列表<i class="ft">List</i><span class="label">3</span></a> 
+                        	<ul id="sjcd" class="djcd">
+                                <li class="borsolid"><a href="error403.html" class="sanji">版权</a> </li>
+                                <li class="borsolid"><a href="javascript:void:(0);" class="sanji sjdj">按钮<span class="label">3</span></a>
+                                	<ul id="fjcd" class="djcd">
+                                        <li class="borsolid"><a href="error403.html" class="siji">error403</a> </li>
+                                        <li class="borsolid"><a href="" class="siji">按钮</a> </li>
+                                        <li class="borsolid"><a href="" class="siji">按钮</a></li>
+                                    </ul>
+                                 </li>
+                                <li class="borsolid"><a href="" class="sanji">面板</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="borsolid"><a href="" class="erji">面板<i class="ft">Panels</i></a></li>
+                        <li class="borsolid"><a href="" class="erji">选项卡<i class="ft">Tabs</i></a></li>
+					</ul>
+				</li>
+			</ul>
+		
+		</div>
+		</div>
+        <!--改动的代码范围end-->
+        
+        
+        
+		<!-- <div id="style-switcher">
+			<i class="icon-arrow-left icon-white"></i>
+			<span>Style:</span>
+			<a href="#grey" style="background-color: #555555;border-color: #aaaaaa;"></a>
+			<a href="#blue" style="background-color: #2D2F57;"></a>
+			<a href="#red" style="background-color: #673232;"></a> 
+		</div>-->
+		
+<div id="content">
+			<div id="content-header">
+				<h1>界面元素</h1>
+				<div class="btn-group">
+					<a class="btn btn-large tip-bottom" title="Manage Files"><i class="icon-file"></i></a>
+					<a class="btn btn-large tip-bottom" title="Manage Users"><i class="icon-user"></i></a>
+					<a class="btn btn-large tip-bottom" title="Manage Comments"><i class="icon-comment"></i><span class="label label-important">5</span></a>
+					<a class="btn btn-large tip-bottom" title="Manage Orders"><i class="icon-shopping-cart"></i></a>
+				</div>
+			</div>
+			<div id="breadcrumb">
+				<a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>首页</a>
+				<a href="#" class="current">界面元素</a>
+			</div>
+			<div class="container-fluid">
+            
+            	<div class="row-fluid">
+					<div class="widget ">
+                        <div class="widget-header">
+                            <i class="icon-user"></i>
+                            <h3>Your Account</h3>
+                        </div> <!-- /widget-header -->
+					
+					<div class="widget-content">
+
+						<div class="tabbable">
+						<ul class="nav nav-tabs">
+						  <li class="active">
+						    <a href="#profile" data-toggle="tab">Profile</a>
+						  </li>
+						  <li><a href="#settings" data-toggle="tab">Settings</a></li>
+						</ul>
+						
+						<br />
+						
+							<div class="tab-content">
+								<div class="tab-pane active" id="profile">
+								<form id="edit-profile" class="form-horizontal" />
+									<fieldset>
+										
+										<div class="control-group">											
+											<label class="control-label" for="username">Username</label>
+											<div class="controls">
+												<input type="text" class="input-medium disabled" id="username" value="goideate" disabled="" />
+												<p class="help-block">Your username is for logging in and cannot be changed.</p>
+											</div> <!-- /controls -->				
+										</div> <!-- /control-group -->
+										
+										
+										<div class="control-group">											
+											<label class="control-label" for="firstname">First Name</label>
+											<div class="controls">
+												<input type="text" class="input-medium" id="firstname" value="Rod" />
+											</div> <!-- /controls -->				
+										</div> <!-- /control-group -->
+										
+										
+										<div class="control-group">											
+											<label class="control-label" for="lastname">Last Name</label>
+											<div class="controls">
+												<input type="text" class="input-medium" id="lastname" value="Howard" />
+											</div> <!-- /controls -->				
+										</div> <!-- /control-group -->
+										
+										
+										<div class="control-group">											
+											<label class="control-label" for="email">Email Address</label>
+											<div class="controls">
+												<input type="text" class="input-large" id="email" value="rod.howard@example.com" />
+											</div> <!-- /controls -->				
+										</div> <!-- /control-group -->
+										
+										
+										<br /><br />
+										
+										<div class="control-group">											
+											<label class="control-label" for="password1">Password</label>
+											<div class="controls">
+												<input type="password" class="input-medium" id="password1" value="password" />
+											</div> <!-- /controls -->				
+										</div> <!-- /control-group -->
+										
+										
+										<div class="control-group">											
+											<label class="control-label" for="password2">Confirm</label>
+											<div class="controls">
+												<input type="password" class="input-medium" id="password2" value="password" />
+											</div> <!-- /controls -->				
+										</div> <!-- /control-group -->
+										
+										
+											
+											<br />
+										
+											
+										<div class="form-actions">
+											<button type="submit" class="btn btn-primary">Save</button> 
+											<button class="btn">Cancel</button>
+										</div> <!-- /form-actions -->
+									</fieldset>
+								</form>
+								</div>
+								
+								<div class="tab-pane" id="settings">
+									<form id="edit-profile2" class="form-horizontal" />
+										<fieldset>
+											
+											
+											<div class="control-group">
+												<label class="control-label" id="pad" for="accounttype">Account Type</label>
+												<div class="controls">
+													<label class="radio">
+														<input type="radio" name="accounttype" value="option1" checked="checked" id="accounttype" />
+														POP3
+													</label>
+													<label class="radio">
+														<input type="radio" name="accounttype" value="option2" />
+														IMAP
+													</label>
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label" for="accountusername">Account Username</label>
+												<div class="controls">
+													<input type="text" class="input-large" id="accountusername" value="rod.howard@example.com" />
+													<p class="help-block">Leave blank to use your profile email address.</p>
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label" for="emailserver">Email Server</label>
+												<div class="controls">
+													<input type="text" class="input-large" id="emailserver" value="mail.example.com" />
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label" for="accountpassword">Password</label>
+												<div class="controls">
+													<input type="text" class="input-large" id="accountpassword" value="password" />
+												</div>
+											</div>
+											
+																						
+											
+											
+											<div class="control-group">
+												<label class="control-label" for="accountadvanced">Advanced Settings</label>
+												<div class="controls">
+													<label class="checkbox">
+														<input type="checkbox" name="accountadvanced" value="option1" checked="checked" id="accountadvanced" />
+														User encrypted connection when accessing this server
+													</label>
+													<label class="checkbox">
+														<input type="checkbox" name="accounttype" value="option2" />
+														Download all message on connection
+													</label>
+												</div>
+											</div>
+
+											
+											<br />
+											
+											<div class="form-actions">
+												<button type="submit" class="btn btn-primary">Save</button> <button class="btn">Cancel</button>
+											</div>
+										</fieldset>
+									</form>
+								</div>
+								
+							</div>
+						  
+						  
+						</div>
+						
+						
+						
+						
+						
+					</div> <!-- /widget-content -->
+						
+				</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span12 center" style="text-align: center;">					
+						<ul class="stat-boxes">
+							<li>
+								<div class="left peity_bar_good"><span>2,4,9,7,12,10,12</span>+20%</div>
+								<div class="right">
+									<strong>36094</strong>
+									Visits
+								</div>
+							</li>
+							<li>
+								<div class="left peity_bar_neutral"><span>20,15,18,14,10,9,9,9</span>0%</div>
+								<div class="right">
+									<strong>1433</strong>
+									Users
+								</div>
+							</li>
+							<li>
+								<div class="left peity_bar_bad"><span>3,5,9,7,12,20,10</span>-50%</div>
+								<div class="right">
+									<strong>8650</strong>
+									Orders
+								</div>
+							</li>
+							<li>
+								<div class="left peity_line_good"><span>12,6,9,23,14,10,17</span>+70%</div>
+								<div class="right">
+									<strong>8650</strong>
+									Orders
+								</div>
+							</li>
+						</ul>
+					</div>	
+				</div>
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="alert alert-info">
+							Welcome in the <strong>Unicorn Admin Theme</strong>. Don't forget to check all the pages!
+							<a href="#" data-dismiss="alert" class="close">×</a>
+						</div>
+										
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="widget-box">
+							<div class="widget-title"><span class="icon"><i class="icon-file"></i></span><h5>Recent Posts</h5><span title="54 total posts" class="label label-info tip-left">54</span></div>
+							<div class="widget-content nopadding">
+								<ul class="recent-posts">
+									<li>
+										<div class="user-thumb">
+											<img width="40" height="40" alt="User" src="img/demo/av2.jpg" />
+										</div>
+										<div class="article-post">
+											<span class="user-info"> By: neytiri on 2 Aug 2012, 09:27 AM, IP: 186.56.45.7 </span>
+											<p>
+												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
+											</p>
+											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Publish</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
+										</div>
+									</li>
+									<li>
+										<div class="user-thumb">
+											<img width="40" height="40" alt="User" src="img/demo/av3.jpg" />
+										</div>
+										<div class="article-post">
+											<span class="user-info"> By: john on on 24 Jun 2012, 04:12 PM, IP: 192.168.24.3 </span>
+											<p>
+												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
+											</p>
+											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Publish</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
+										</div>
+									</li>
+									<li>
+										<div class="user-thumb">
+											<img width="40" height="40" alt="User" src="img/demo/av1.jpg" />
+										</div>
+										<div class="article-post">
+											<span class="user-info"> By: michelle on 22 Jun 2012, 02:44 PM, IP: 172.10.56.3 </span>
+											<p>
+												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
+											</p>
+											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Publish</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
+										</div>
+									</li>
+									<li class="viewall">
+										<a title="View all posts" class="tip-top" href="#"> + View all + </a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="span6">
+						<div class="widget-box">
+							<div class="widget-title"><span class="icon"><i class="icon-comment"></i></span><h5>Recent Comments</h5><span title="88 total comments" class="label label-info tip-left">88</span></div>
+							<div class="widget-content nopadding">
+								<ul class="recent-comments">
+									<li>
+										<div class="user-thumb">
+											<img width="40" height="40" alt="User" src="img/demo/av1.jpg" />
+										</div>
+										<div class="comments">
+											<span class="user-info"> User: michelle on IP: 172.10.56.3 </span>
+											<p>
+												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
+											</p>
+											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Approve</a> <a href="#" class="btn btn-warning btn-mini">Mark as spam</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
+										</div>
+									</li>
+									<li>
+										<div class="user-thumb">
+											<img width="40" height="40" alt="User" src="img/demo/av3.jpg" />
+										</div>
+										<div class="comments">
+											<span class="user-info"> User: john on IP: 192.168.24.3 </span>
+											<p>
+												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
+											</p>
+											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Approve</a> <a href="#" class="btn btn-warning btn-mini">Mark as spam</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
+										</div>
+									</li>
+									<li>
+										<div class="user-thumb">
+											<img width="40" height="40" alt="User" src="img/demo/av2.jpg" />
+										</div>
+										<div class="comments">
+											<span class="user-info"> User: neytiri on IP: 186.56.45.7 </span>
+											<p>
+												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
+											</p>
+											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Approve</a> <a href="#" class="btn btn-warning btn-mini">Mark as spam</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
+										</div>
+									</li>
+									<li class="viewall">
+										<a title="View all comments" class="tip-top" href="#"> + View all + </a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row-fluid">
+					<div id="footer" class="span12">
+						2012 &copy; Unicorn Admin. Brought to you by <a href="https://wrapbootstrap.com/user/diablo9983">diablo9983</a>
+					</div>
+				</div>
+			</div>
+		</div>
+			<script src="js/excanvas.min.js"></script>
+            <script src="../js/jquery.min.js"></script>
+            <script src="../js/bootstrap.min.js"></script>
+            <script src="../js/jquery.ui.custom.js"></script>
+            <script src="../js/jquery.dataTables.min.js"></script>
+            <script src="../js/unicorn.js"></script>
+            <script src="../js/unicorn.tables.js"></script>
+            <script src="../js/jquery.gritter.min.js"></script> 
+            <script>
+            	$(document).ready(function() {
+                    // === jQeury Gritter, a growl-like notifications === //
+						$.gritter.add({
+							title:	'Important Unread messages',
+							text:	'You have 12 unread messages.',
+							image: 	'../img/demo/envelope.png',
+							sticky: false
+						});	
+						$('#gritter-notify .normal').click(function(){
+							$.gritter.add({
+								title:	'Normal notification',
+								text:	'This is a normal notification',
+								sticky: false
+							});		
+						});
+						
+						$('#gritter-notify .sticky').click(function(){
+							$.gritter.add({
+								title:	'Sticky notification',
+								text:	'This is a sticky notification',
+								sticky: true
+							});		
+						});
+						
+						$('#gritter-notify .image').click(function(){
+							var imgsrc = $(this).attr('data-image');
+							$.gritter.add({
+								title:	'Important Unread messages',
+								text:	'You have 12 unread messages.',
+								image: imgsrc,
+								sticky: false
+							});		
+						});		
+		
+                });
+            </script>
+	</body>
+</html>

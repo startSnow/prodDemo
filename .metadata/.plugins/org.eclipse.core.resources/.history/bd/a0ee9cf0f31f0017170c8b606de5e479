@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title></title>
+</head>
+<body>
+	<div th:fragment="menu">
+		<div id="sidebar">
+			<a href="#" class="visible-phone"><i class="icon icon-inbox"></i>
+				Widgets</a>
+			<ul id="sidebar_open">
+				<li style="margin-top: 82px;"></li>
+				<li class="submenu active" 
+					th:each="menu: ${menus.items}"
+					th:attr="onclick='load(\''+${menu.href}+'\');'"><a href="javascript:void(0);"
+					class="borleft"><img th:src="@{${menu.path}}" width="22" height="22"></img><span
+						th:text="${menu.text}"></span><i class="ft">sys</i></a>
+					<ul id="djcd">
+						<li  class="bornone" th:each="menuChildren:${menu.items}"  
+							th:attr="onclick='load(\''+${menuChildren.href}+'\');'">
+							 <a href="javascript:void(0);">
+							<img th:src="@{${menuChildren.path}}"></img><span
+							th:text="${menuChildren.text}"></span></a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+	function load(url){
+		alert($("#right"));
+		$("#right").load(url);
+	}
+	</script>
+</body>
+</html>

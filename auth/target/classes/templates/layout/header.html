@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+
+<title></title>
+</head>
+<body>
+	<div th:fragment="header">
+		<div id="header">
+	    <div id="in-sub-nav">
+          <div class="in-sub-navimg" > <img src="img/logo.png" /></div>
+          
+          <i id="sidebar_btn" class="icona icon-align-justify" ></i>
+          <div class="container">
+          	<div>
+            	<div class="" id="row_nav" style="width:auto;">
+                     <ul>
+                      <li><a href="#"><i class="icon icon-th"></i>表格</a></li>
+                      <li><a href="#"><i class="icon icon-edit"></i>表单</a></li>
+                      <li><a href="#" class="active"><i class="icon icon-magnet"></i>界面元素</a></li>
+                      <li><a href="#"><i class="icon icon-book"></i>附加</a></li>
+                      <li><a href="#"><i class="icon icon-eye-open"></i>布局</a></li>
+                    </ul>
+                  </div>
+                  <div id="search">
+                  	<i class="icon-search icon-white searchtb iconmar"></i>
+            		<div class="searchtext" style="display:none;">
+                    	<input class="test" type="text" placeholder="Search here..." /><button type="submit" class="tip-right" title="Search"><i class="icon-search icon-white"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+		</div>
+		<script type="text/javascript">
+		/*<![CDATA[*/
+			function load(href){
+				 $("#right").load(href);
+			}
+		/*]]>*/
+
+		</script>
+	</div>
+</body>
+</html>

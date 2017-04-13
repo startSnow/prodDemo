@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Unicorn Admin</title>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" href="../css/styles.css" />
+		<link rel="stylesheet" href="../css/unicorn.main.css" />
+		<link rel="stylesheet" href="../css/unicorn.grey.css" class="skin-color" />
+        <link rel="stylesheet" href="../css/uniform.css" />
+		<link rel="stylesheet" href="../css/select2.css" />
+        <link rel="stylesheet" href="../css/jquery.gritter.css" />	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+	<body>
+		<div id="header">          
+         <div id="in-sub-nav">
+          <div class="in-sub-navimg"> <img src="../img/logo.png"/></div>
+          
+          <i id="sidebar_btn" class="icona icon-align-justify"></i>
+              <div class="container">
+                <div>
+                  <div id="row_nav" style="width:auto;">
+                    <ul>
+                      <li><a href="tables.html" class="active"><i class="icon icon-th"></i>表格</a></li>
+                      <li><a href="form.html"><i class="icon icon-edit"></i>表单</a></li>
+                      <li><a href="index.html"><i class="icon icon-magnet"></i>界面元素</a></li>
+                      <li><a href="buttons.html"><i class="icon icon-book"></i>附加</a></li>
+                      <li><a href="layout.html"><i class="icon icon-eye-open"></i>布局</a></li>
+                    </ul>
+                  </div>
+                  <div id="search">
+                  	<i class="icon-search icon-white searchtb iconmar"></i>
+            		<div class="searchtext" style="display:none;">
+                    	<input class="test" type="text" placeholder="Search here..." /><button type="submit" class="tip-right" title="Search"><i class="icon-search icon-white"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+		</div>
+
+            
+		<div class="leftnav">
+			<div class="sidebar_close">
+                <ul id="sidebar_close">
+                
+                  <li class="mar_top active"><a href="tables.html"><i class="icon icon-th"></i></a></li>
+                  <li class="lihove_pen"><a href="form.html"><i class="icon icon-edit"></i></a>
+                        <ul class="sidebar_closepen">
+                            <li class="bornone"><a href="error403.html">Pencil1</a>	</li>
+                            <li class="bornone"><a href="buttons.html">Pencil2</a>	 </li>
+                            <li class="bornone"><a href="buttons.html">Pencil3</a>	</li>
+                            <li class="bornone"><a href="buttons.html">Pencil4</a>	</li>
+                            <li class="bornone"><a href="buttons.html">Pencil5</a>	</li>
+                        </ul>
+                  
+                  </li>
+                  <li class="lihove"><a href="index.html"><i class="icon icon-magnet"></i></a>
+                        <ul class="sidebar_closexl">
+                        	<li class="bornone"><a href="error403.html">报错提示</a> </li>
+                            <li class="bornone"><a href="buttons.html">按钮</a> </li>
+                            <li class="bornone"><a href="tree.html">树样式</a></li>
+                            <li class="bornone"><a href="tab.html">选项卡</a></li>
+                            <li class="bornone"><a href="blockquotes.html" class="acli">面包屑</a></li>
+                            <li class="bornone"><a href="search.html">搜索</a></li>
+                            <li class="bornone"><a href="pagination.html">分页</a></li>
+                            <li class="bornone"><a href="lhgdialog.html">弹出层</a></li>
+                            <li class="bornone"><a href="richtext.html">富文本</a></li>
+                            <li class="bornone"><a href="my97datapicker.html">日期</a></li>
+                            <li class="bornone"><a href="lhgdialog.html">弹出层</a></li>
+                            <li class="bornone threemenus"><a href="my97datapicker.html">文件上传<span class="label">2</span></a>
+                            	<ul class="sidebar_closepen_list">
+                                    <li class="bornone"><a href="upload1.html">批量上传</a>	</li>
+                                    <li class="bornone"><a href="upload2.html">限制文件类型</a>	</li>
+                                </ul>
+                            </li>
+                        </ul>
+                  </li>       
+                  <li><a href=""><i class="icon icon-book"></i></a></li>
+                  <li><a href="layout.html"><i class="icon icon-eye-open"></i></a></li>   
+                </ul>
+            </div>
+		<div id="sidebar">
+			<a href="#" class="visible-phone"><i class="icon icon-inbox"></i> Widgets</a>
+
+			<ul id="sidebar_open">
+            	<li class="mar_top"><a href="tables.html" class="borleft"><i class="icon icon-th"></i> <span>表格/列表</span><i class="ft">Tables</i></a></li>
+                <li><a href="form.html" class="borleft"><i class="icon icon-edit"></i> <span>表单</span><i class="ft">Forms</i></a></li>
+				<li class="submenu active">
+					<a href="#" class="borleft"><i class="icon icon-magnet"></i> <span>界面元素</span> <i class="ft">Dashboard</i><span class="label">11</span></a>
+					<ul id="djcd">
+						<li class="bornone" style="margin-top:10px;"><a href="error403.html">报错提示<i class="ft">error</i></a> </li>
+                        <li class="bornone"><a href="buttons.html">按钮<i class="ft">Buttons</i></a> </li>
+                        <li class="bornone"><a href="tree.html">树样式<i class="ft">Tree</i></a></li>
+                        <li class="bornone"><a href="tab.html">选项卡<i class="ft">Tabs</i></a></li>
+                        <li class="bornone"><a href="blockquotes.html" class="acli">面包屑<i class="ft">Blockquotes</i></a></li>
+                        <li class="bornone"><a href="search.html">搜索<i class="ft">Tabs</i></a></li>
+                        <li class="bornone"><a href="pagination.html">分页<i class="ft">Pagination</i></a></li>
+                        <li class="bornone"><a href="lhgdialog.html">弹出层<i class="ft">Popup</i></a></li>
+                        <li class="bornone"><a href="richtext.html">富文本<i class="ft">Texts</i></a></li>
+                        <li class="bornone"><a href="my97datapicker.html">日期<i class="ft">Date</i></a></li>
+                        <li class="bornone"><a href="upload1.html">文件批量上传<i class="ft">Upload</i></a></li>
+                        <li class="bornone"><a href="upload2.html">限制文件类型<i class="ft">Uploadtype</i></a></li>
+					</ul>
+
+				</li>
+				<li><a href="" class="borleft"><i class="icon icon-book"></i> <span>附加</span><i class="ft">Extra</i></a></li>
+				<li class=""><a href="layout.html" class="borleft"><i class="icon icon-eye-open"></i> <span>布局</span><i class="ft">layout</i></a></li>
+				<li>
+					<a href="#" class="sub borleft"><i class="icon icon-pencil"></i> <span>菜单</span> <i class="ft">Dashboard</i><span class="label">4</span></a>
+					<ul id="ejcd" class="djcd" style="background:#2f3844;">
+						<li class="borsolid"><a href="" class="erji">分类<i class="ft">Classify</i></a> </li>
+                        <li class="borsolid"><a href="#" class="erji yjan">列表<i class="ft">List</i><span class="label">3</span></a> 
+                        	<ul id="sjcd" class="djcd">
+                                <li class="borsolid"><a href="error403.html" class="sanji">版权</a> </li>
+                                <li class="borsolid"><a href="javascript:void:(0);" class="sanji sjdj">按钮<span class="label">3</span></a>
+                                	<ul id="fjcd" class="djcd">
+                                        <li class="borsolid"><a href="error403.html" class="siji">error403</a> </li>
+                                        <li class="borsolid"><a href="" class="siji">按钮</a> </li>
+                                        <li class="borsolid"><a href="" class="siji">按钮</a></li>
+                                    </ul>
+                                 </li>
+                                <li class="borsolid"><a href="" class="sanji">面板</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="borsolid"><a href="" class="erji">面板<i class="ft">Panels</i></a></li>
+                        <li class="borsolid"><a href="" class="erji">选项卡<i class="ft">Tabs</i></a></li>
+					</ul>
+				</li>
+			</ul>
+		
+		</div>
+		</div>
+		
+		
+		<!--<div id="style-switcher">
+			<i class="icon-arrow-left icon-white"></i>
+			<span>Style:</span>
+			<a href="#grey" style="background-color: #555555;border-color: #aaaaaa;"></a>
+			<a href="#blue" style="background-color: #2D2F57;"></a>
+			<a href="#red" style="background-color: #673232;"></a>
+		</div>-->
+		
+		<div id="content">
+            <div id="content-header">
+                <h1>表格元素</h1>
+                <div class="btn-group">
+                    <a class="btn btn-large tip-bottom" title="Manage Files"><i class="icon-file"></i></a>
+                    <a class="btn btn-large tip-bottom" title="Manage Users"><i class="icon-user"></i></a>
+                    <a class="btn btn-large tip-bottom" title="Manage Comments"><i class="icon-comment"></i><span class="label label-important">5</span></a>
+                    <a class="btn btn-large tip-bottom" title="Manage Orders"><i class="icon-shopping-cart"></i></a>
+                </div>
+            </div>
+            <div id="breadcrumb">
+				<a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>首页</a>
+				<a href="#">表单元素</a>
+				<a href="#" class="current">表格</a>
+			</div>
+            	<div class="container-fluid">
+                    <div class="widget-title widget-titlemar widget-titlebor">
+                        <h5>Dynamic table</h5>
+                    </div>
+					<div class="widget-box bornone">  		 	
+							<div class="widget-title widget-titlebor">
+								
+							</div>
+							<div class="widget-content nopadding">
+                            
+								<table class="table data-table widget-titlebor">
+									<thead>
+									<tr>
+									<th>Rendering engine</th>
+									<th>Browser</th>
+									<th>Platform(s)</th>
+									<th>Engine version</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr class="gradeX">
+									<td>Trident</td>
+									<td>Internet
+									Explorer 4.0</td>
+									<td>Win 95+</td>
+									<td class="center">4</td>
+									</tr>
+									<tr class="gradeC">
+									<td>Trident</td>
+									<td>Internet
+									Explorer 5.0</td>
+									<td>Win 95+</td>
+									<td class="center">5</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Trident</td>
+									<td>Internet
+									Explorer 5.5</td>
+									<td>Win 95+</td>
+									<td class="center">5.5</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Trident</td>
+									<td>Internet
+									Explorer 6</td>
+									<td>Win 98+</td>
+									<td class="center">6</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Trident</td>
+									<td>Internet Explorer 7</td>
+									<td>Win XP SP2+</td>
+									<td class="center">7</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Trident</td>
+									<td>AOL browser (AOL desktop)</td>
+									<td>Win XP</td>
+									<td class="center">6</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Gecko</td>
+									<td>Firefox 1.0</td>
+									<td>Win 98+ / OSX.2+</td>
+									<td class="center">1.7</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Gecko</td>
+									<td>Firefox 1.5</td>
+									<td>Win 98+ / OSX.2+</td>
+									<td class="center">1.8</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Gecko</td>
+									<td>Firefox 2.0</td>
+									<td>Win 98+ / OSX.2+</td>
+									<td class="center">1.8</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Gecko</td>
+									<td>Firefox 3.0</td>
+									<td>Win 2k+ / OSX.3+</td>
+									<td class="center">1.9</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Gecko</td>
+									<td>Camino 1.0</td>
+									<td>OSX.2+</td>
+									<td class="center">1.8</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Gecko</td>
+									<td>Camino 1.5</td>
+									<td>OSX.3+</td>
+									<td class="center">1.8</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Gecko</td>
+									<td>Netscape 7.2</td>
+									<td>Win 95+ / Mac OS 8.6-9.2</td>
+									<td class="center">1.7</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Gecko</td>
+									<td>Netscape Browser 8</td>
+									<td>Win 98SE+</td>
+									<td class="center">1.7</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Gecko</td>
+									<td>Netscape Navigator 9</td>
+									<td>Win 98+ / OSX.2+</td>
+									<td class="center">1.8</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Gecko</td>
+									<td>Mozilla 1.0</td>
+									<td>Win 95+ / OSX.1+</td>
+									<td class="center">1</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Gecko</td>
+									<td>Mozilla 1.1</td>
+									<td>Win 95+ / OSX.1+</td>
+									<td class="center">1.1</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Gecko</td>
+									<td>Mozilla 1.2</td>
+									<td>Win 95+ / OSX.1+</td>
+									<td class="center">1.2</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Gecko</td>
+									<td>Mozilla 1.3</td>
+									<td>Win 95+ / OSX.1+</td>
+									<td class="center">1.3</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Gecko</td>
+									<td>Mozilla 1.4</td>
+									<td>Win 95+ / OSX.1+</td>
+									<td class="center">1.4</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Gecko</td>
+									<td>Mozilla 1.5</td>
+									<td>Win 95+ / OSX.1+</td>
+									<td class="center">1.5</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Gecko</td>
+									<td>Mozilla 1.6</td>
+									<td>Win 95+ / OSX.1+</td>
+									<td class="center">1.6</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Gecko</td>
+									<td>Mozilla 1.7</td>
+									<td>Win 98+ / OSX.1+</td>
+									<td class="center">1.7</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Gecko</td>
+									<td>Mozilla 1.8</td>
+									<td>Win 98+ / OSX.1+</td>
+									<td class="center">1.8</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Gecko</td>
+									<td>Seamonkey 1.1</td>
+									<td>Win 98+ / OSX.2+</td>
+									<td class="center">1.8</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Gecko</td>
+									<td>Epiphany 2.20</td>
+									<td>Gnome</td>
+									<td class="center">1.8</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Webkit</td>
+									<td>Safari 1.2</td>
+									<td>OSX.3</td>
+									<td class="center">125.5</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Webkit</td>
+									<td>Safari 1.3</td>
+									<td>OSX.3</td>
+									<td class="center">312.8</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Webkit</td>
+									<td>Safari 2.0</td>
+									<td>OSX.4+</td>
+									<td class="center">419.3</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Webkit</td>
+									<td>Safari 3.0</td>
+									<td>OSX.4+</td>
+									<td class="center">522.1</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Webkit</td>
+									<td>OmniWeb 5.5</td>
+									<td>OSX.4+</td>
+									<td class="center">420</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Webkit</td>
+									<td>iPod Touch / iPhone</td>
+									<td>iPod</td>
+									<td class="center">420.1</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Webkit</td>
+									<td>S60</td>
+									<td>S60</td>
+									<td class="center">413</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Presto</td>
+									<td>Opera 7.0</td>
+									<td>Win 95+ / OSX.1+</td>
+									<td class="center">-</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Presto</td>
+									<td>Opera 7.5</td>
+									<td>Win 95+ / OSX.2+</td>
+									<td class="center">-</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Presto</td>
+									<td>Opera 8.0</td>
+									<td>Win 95+ / OSX.2+</td>
+									<td class="center">-</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Presto</td>
+									<td>Opera 8.5</td>
+									<td>Win 95+ / OSX.2+</td>
+									<td class="center">-</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Presto</td>
+									<td>Opera 9.0</td>
+									<td>Win 95+ / OSX.3+</td>
+									<td class="center">-</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Presto</td>
+									<td>Opera 9.2</td>
+									<td>Win 88+ / OSX.3+</td>
+									<td class="center">-</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Presto</td>
+									<td>Opera 9.5</td>
+									<td>Win 88+ / OSX.3+</td>
+									<td class="center">-</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Presto</td>
+									<td>Opera for Wii</td>
+									<td>Wii</td>
+									<td class="center">-</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Presto</td>
+									<td>Nokia N800</td>
+									<td>N800</td>
+									<td class="center">-</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Presto</td>
+									<td>Nintendo DS browser</td>
+									<td>Nintendo DS</td>
+									<td class="center">8.5</td>
+									</tr>
+									<tr class="gradeC">
+									<td>KHTML</td>
+									<td>Konqureror 3.1</td>
+									<td>KDE 3.1</td>
+									<td class="center">3.1</td>
+									</tr>
+									<tr class="gradeA">
+									<td>KHTML</td>
+									<td>Konqureror 3.3</td>
+									<td>KDE 3.3</td>
+									<td class="center">3.3</td>
+									</tr>
+									<tr class="gradeA">
+									<td>KHTML</td>
+									<td>Konqureror 3.5</td>
+									<td>KDE 3.5</td>
+									<td class="center">3.5</td>
+									</tr>
+									<tr class="gradeX">
+									<td>Tasman</td>
+									<td>Internet Explorer 4.5</td>
+									<td>Mac OS 8-9</td>
+									<td class="center">-</td>
+									</tr>
+									<tr class="gradeC">
+									<td>Tasman</td>
+									<td>Internet Explorer 5.1</td>
+									<td>Mac OS 7.6-9</td>
+									<td class="center">1</td>
+									</tr>
+									<tr class="gradeC">
+									<td>Tasman</td>
+									<td>Internet Explorer 5.2</td>
+									<td>Mac OS 8-X</td>
+									<td class="center">1</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Misc</td>
+									<td>NetFront 3.1</td>
+									<td>Embedded devices</td>
+									<td class="center">-</td>
+									</tr>
+									<tr class="gradeA">
+									<td>Misc</td>
+									<td>NetFront 3.4</td>
+									<td>Embedded devices</td>
+									<td class="center">-</td>
+									</tr>
+									<tr class="gradeX">
+									<td>Misc</td>
+									<td>Dillo 0.8</td>
+									<td>Embedded devices</td>
+									<td class="center">-</td>
+									</tr>
+									<tr class="gradeX">
+									<td>Misc</td>
+									<td>Links</td>
+									<td>Text only</td>
+									<td class="center">-</td>
+									</tr>
+									<tr class="gradeX">
+									<td>Misc</td>
+									<td>Lynx</td>
+									<td>Text only</td>
+									<td class="center">-</td>
+									</tr>
+									<tr class="gradeC">
+									<td>Misc</td>
+									<td>IE Mobile</td>
+									<td>Windows Mobile 6</td>
+									<td class="center">-</td>
+									</tr>
+									<tr class="gradeC">
+									<td>Misc</td>
+									<td>PSP browser</td>
+									<td>PSP</td>
+									<td class="center">-</td>
+									</tr>
+									<tr class="gradeU">
+									<td>Other browsers</td>
+									<td>All others</td>
+									<td>-</td>
+									<td class="center">-</td>
+									</tr>
+									</tbody>
+									</table>  
+                                    
+                                    <table class="table data-table-2 widget-titlebor" style="margin-top:30px;">
+									<thead>
+									<tr>
+                                    <th><input type="checkbox" class="xk"/></th>
+									<th>Rendering engine</th>
+									<th>Browser</th>
+									<th>Platform(s)</th>
+									<th>Engine version</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr class="gradeX">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Trident</td>
+									<td>Internet
+									Explorer 4.0</td>
+									<td>Win 95+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    
+                                    </td>
+									</tr>
+									<tr class="gradeC">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Trident</td>
+									<td>Internet
+									Explorer 5.0</td>
+									<td>Win 95+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Trident</td>
+									<td>Internet
+									Explorer 5.5</td>
+									<td>Win 95+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Trident</td>
+									<td>Internet
+									Explorer 6</td>
+									<td>Win 98+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Trident</td>
+									<td>Internet Explorer 7</td>
+									<td>Win XP SP2+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Trident</td>
+									<td>AOL browser (AOL desktop)</td>
+									<td>Win XP</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Gecko</td>
+									<td>Firefox 1.0</td>
+									<td>Win 98+ / OSX.2+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Gecko</td>
+									<td>Firefox 1.5</td>
+									<td>Win 98+ / OSX.2+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Gecko</td>
+									<td>Firefox 2.0</td>
+									<td>Win 98+ / OSX.2+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Gecko</td>
+									<td>Firefox 3.0</td>
+									<td>Win 2k+ / OSX.3+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Gecko</td>
+									<td>Camino 1.0</td>
+									<td>OSX.2+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a></td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Gecko</td>
+									<td>Camino 1.5</td>
+									<td>OSX.3+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Gecko</td>
+									<td>Netscape 7.2</td>
+									<td>Win 95+ / Mac OS 8.6-9.2</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Gecko</td>
+									<td>Netscape Browser 8</td>
+									<td>Win 98SE+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Gecko</td>
+									<td>Netscape Navigator 9</td>
+									<td>Win 98+ / OSX.2+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Gecko</td>
+									<td>Mozilla 1.0</td>
+									<td>Win 95+ / OSX.1+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Gecko</td>
+									<td>Mozilla 1.1</td>
+									<td>Win 95+ / OSX.1+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Gecko</td>
+									<td>Mozilla 1.2</td>
+									<td>Win 95+ / OSX.1+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Gecko</td>
+									<td>Mozilla 1.3</td>
+									<td>Win 95+ / OSX.1+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Gecko</td>
+									<td>Mozilla 1.4</td>
+									<td>Win 95+ / OSX.1+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Gecko</td>
+									<td>Mozilla 1.5</td>
+									<td>Win 95+ / OSX.1+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Gecko</td>
+									<td>Mozilla 1.6</td>
+									<td>Win 95+ / OSX.1+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Gecko</td>
+									<td>Mozilla 1.7</td>
+									<td>Win 98+ / OSX.1+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Gecko</td>
+									<td>Mozilla 1.8</td>
+									<td>Win 98+ / OSX.1+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Gecko</td>
+									<td>Seamonkey 1.1</td>
+									<td>Win 98+ / OSX.2+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Gecko</td>
+									<td>Epiphany 2.20</td>
+									<td>Gnome</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Webkit</td>
+									<td>Safari 1.2</td>
+									<td>OSX.3</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Webkit</td>
+									<td>Safari 1.3</td>
+									<td>OSX.3</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Webkit</td>
+									<td>Safari 2.0</td>
+									<td>OSX.4+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Webkit</td>
+									<td>Safari 3.0</td>
+									<td>OSX.4+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Webkit</td>
+									<td>OmniWeb 5.5</td>
+									<td>OSX.4+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Webkit</td>
+									<td>iPod Touch / iPhone</td>
+									<td>iPod</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Webkit</td>
+									<td>S60</td>
+									<td>S60</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Presto</td>
+									<td>Opera 7.0</td>
+									<td>Win 95+ / OSX.1+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Presto</td>
+									<td>Opera 7.5</td>
+									<td>Win 95+ / OSX.2+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Presto</td>
+									<td>Opera 8.0</td>
+									<td>Win 95+ / OSX.2+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Presto</td>
+									<td>Opera 8.5</td>
+									<td>Win 95+ / OSX.2+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Presto</td>
+									<td>Opera 9.0</td>
+									<td>Win 95+ / OSX.3+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Presto</td>
+									<td>Opera 9.2</td>
+									<td>Win 88+ / OSX.3+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Presto</td>
+									<td>Opera 9.5</td>
+									<td>Win 88+ / OSX.3+</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Presto</td>
+									<td>Opera for Wii</td>
+									<td>Wii</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Presto</td>
+									<td>Nokia N800</td>
+									<td>N800</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Presto</td>
+									<td>Nintendo DS browser</td>
+									<td>Nintendo DS</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeC">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>KHTML</td>
+									<td>Konqureror 3.1</td>
+									<td>KDE 3.1</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>KHTML</td>
+									<td>Konqureror 3.3</td>
+									<td>KDE 3.3</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>KHTML</td>
+									<td>Konqureror 3.5</td>
+									<td>KDE 3.5</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeX">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Tasman</td>
+									<td>Internet Explorer 4.5</td>
+									<td>Mac OS 8-9</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeC">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Tasman</td>
+									<td>Internet Explorer 5.1</td>
+									<td>Mac OS 7.6-9</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeC">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Tasman</td>
+									<td>Internet Explorer 5.2</td>
+									<td>Mac OS 8-X</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Misc</td>
+									<td>NetFront 3.1</td>
+									<td>Embedded devices</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeA">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Misc</td>
+									<td>NetFront 3.4</td>
+									<td>Embedded devices</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeX">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Misc</td>
+									<td>Dillo 0.8</td>
+									<td>Embedded devices</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeX">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Misc</td>
+									<td>Links</td>
+									<td>Text only</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeX">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Misc</td>
+									<td>Lynx</td>
+									<td>Text only</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeC">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Misc</td>
+									<td>IE Mobile</td>
+									<td>Windows Mobile 6</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeC">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Misc</td>
+									<td>PSP browser</td>
+									<td>PSP</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									<tr class="gradeU">
+                                    <td><input type="checkbox" class="xk"/></td>
+									<td>Other browsers</td>
+									<td>All others</td>
+									<td>-</td>
+									<td class="center">
+                                    	<a class="btn btn-secondary" href="#">编辑</a>
+                                        <a class="btn btn-danger" href="#">删除</a>
+                                        <a class="btn btn-info" href="#">描述</a>
+                                    </td>
+									</tr>
+									</tbody>
+									</table>
+  <div class="panel panel-default" style="width:100%;background:#fff;margin-top:30px;">
+    <div class="panel-heading">
+        <h3 class="panel-title">Custom column filtering</h3>   
+        <div class="panel-options">
+            <a href="#" data-toggle="panel">
+                <span class="collapse-icon">&ndash;</span>
+            </a>
+            <a href="#" data-toggle="remove">
+                &times;
+            </a>
+        </div>
+    </div>
+
+            <table class="table widget-titlebor" id="example-3">
+                        <thead>
+                        <tr>
+                        <th>Rendering engine</th>
+                        <th>Browser</th>
+                        <th>Platform(s)</th>
+                        <th>Engine version</th>
+                        </tr>
+                        <tr>
+                        <th>
+                        <select id="" class="yadcf-filter">
+                        <option value="-1">Select value</option>
+                        <option value="Gecko">Gecko</option>
+                        <option value="KHTML">KHTML</option>
+                        <option value="Misc">Webkit</option>
+                        <option value="Other browsers">Other browsers</option>
+                        <option value="Presto">Presto</option>
+                        </select>
+
+                    </th>
+                        <th>
+
+<input id="yadcf-filter--example-3-1" class="yadcf-filter" type="text"  filter_match_mode="contains" placeholder="Type a value">
+
+
+                        </th>
+
+                        <th>  
+                        <div id="" class="yadcf-filter-wrapper-inner">
+                            <input id="" class="" placeholder="from">
+                            <span class="yadcf-filter-range-number-seperator"></span>
+                            <input id="" class="yadcf-filter-range-number"  placeholder="to">
+                        </div>
+                        </th>
+                        <th>
+                        	<div id="yadcf-filter-wrapper--example-3-4" class="yadcf-filter-wrapper">
+                            <select id="yadcf-filter--example-3-4" class="yadcf-filter" onclick="yadcf.stopPropagation(event);" onchange="yadcf.doFilter(this, '-example-3', 4, 'contains')">
+                            <option value="-1">Select value</option>
+                            <option value="A">A</option>
+                            <option value="C">C</option>
+                            <option value="C/A<sup>1</sup>">C/A1</option>
+                            <option value="U">U</option>
+                            <option value="X">X</option>
+                            </select>
+                            </div>
+                        </th>
+                        </tr>
+
+        </thead>
+                <tbody>
+                <tr>
+                    <td>Trident</td>
+                    <td>Internet Explorer 4.0</td>
+                    <td class="center">4</td>
+                    <td class="center">X</td>
+                </tr>
+                <tr>
+                    <td>Trident</td>
+                    <td>Internet Explorer 5.0</td>
+                    <td class="center">5</td>
+                    <td class="center">C</td>
+                </tr>
+                <tr>
+                    <td>Trident</td>
+                    <td>Internet Explorer 5.5</td>
+                    <td class="center">5.5</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Trident</td>
+                    <td>Internet Explorer 6</td>
+                    <td class="center">6</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Trident</td>
+                    <td>Internet Explorer 7</td>
+                    <td class="center">7</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Trident</td>
+                    <td>AOL browser (AOL desktop)</td>
+                    <td class="center">6</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Gecko</td>
+                    <td>Firefox 1.0</td>
+                    <td class="center">1.7</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Gecko</td>
+                    <td>Firefox 1.5</td>
+                    <td class="center">1.8</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Gecko</td>
+                    <td>Firefox 2.0</td>
+                    <td class="center">1.8</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Gecko</td>
+                    <td>Firefox 3.0</td>
+                    <td class="center">1.9</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Gecko</td>
+                    <td>Camino 1.0</td>
+                    <td class="center">1.8</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Gecko</td>
+                    <td>Camino 1.5</td>
+                    <td class="center">1.8</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Gecko</td>
+                    <td>Netscape 7.2</td>
+                    <td class="center">1.7</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Gecko</td>
+                    <td>Netscape Browser 8</td>
+                    <td class="center">1.7</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Gecko</td>
+                    <td>Netscape Navigator 9</td>
+                    <td class="center">1.8</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Gecko</td>
+                    <td>Mozilla 1.0</td>
+                    <td class="center">1</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Gecko</td>
+                    <td>Mozilla 1.1</td>
+                    <td class="center">1.1</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Gecko</td>
+                    <td>Mozilla 1.2</td>
+                    <td class="center">1.2</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Gecko</td>
+                    <td>Mozilla 1.3</td>
+                    <td class="center">1.3</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Gecko</td>
+                    <td>Mozilla 1.4</td>
+                    <td class="center">1.4</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Gecko</td>
+                    <td>Mozilla 1.5</td>
+                    <td class="center">1.5</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Gecko</td>
+                    <td>Mozilla 1.6</td>
+                    <td class="center">1.6</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Gecko</td>
+                    <td>Mozilla 1.7</td>
+                    <td class="center">1.7</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Gecko</td>
+                    <td>Mozilla 1.8</td>
+                    <td class="center">1.8</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Gecko</td>
+                    <td>Seamonkey 1.1</td>
+                    <td class="center">1.8</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Gecko</td>
+                    <td>Epiphany 2.20</td>
+                    <td class="center">1.8</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Webkit</td>
+                    <td>Safari 1.2</td>
+                    <td class="center">125.5</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Webkit</td>
+                    <td>Safari 1.3</td>
+                    <td class="center">312.8</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Webkit</td>
+                    <td>Safari 2.0</td>
+                    <td class="center">419.3</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Webkit</td>
+                    <td>Safari 3.0</td>
+                    <td class="center">522.1</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Webkit</td>
+                    <td>OmniWeb 5.5</td>
+                    <td class="center">420</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Webkit</td>
+                    <td>iPod Touch / iPhone</td>
+                    <td class="center">420.1</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Webkit</td>
+                    <td>S60</td>
+                    <td class="center">413</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Presto</td>
+                    <td>Opera 7.0</td>
+                    <td class="center">-</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Presto</td>
+                    <td>Opera 7.5</td>
+                    <td class="center">-</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Presto</td>
+                    <td>Opera 8.0</td>
+                    <td class="center">-</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Presto</td>
+                    <td>Opera 8.5</td>
+                    <td class="center">-</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Presto</td>
+                    <td>Opera 9.0</td>
+                    <td class="center">-</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Presto</td>
+                    <td>Opera 9.2</td>
+                    <td class="center">-</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Presto</td>
+                    <td>Opera 9.5</td>
+                    <td class="center">-</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Presto</td>
+                    <td>Opera for Wii</td>
+                    <td class="center">-</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Presto</td>
+                    <td>N800</td>
+                    <td class="center">-</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Presto</td>
+                    <td>Nintendo DS browser</td>
+                    <td class="center">8.5</td>
+                    <td class="center">C/A<sup>1</sup>
+                    </td>
+                </tr>
+                <tr>
+                    <td>KHTML</td>
+                    <td>Konqureror 3.1</td>
+                    <td class="center">3.1</td>
+                    <td class="center">C</td>
+                </tr>
+                <tr>
+                    <td>KHTML</td>
+                    <td>Konqureror 3.3</td>
+                    <td class="center">3.3</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>KHTML</td>
+                    <td>Konqureror 3.5</td>
+                    <td class="center">3.5</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Tasman</td>
+                    <td>Internet Explorer 4.5</td>
+                    <td class="center">-</td>
+                    <td class="center">X</td>
+                </tr>
+                <tr>
+                    <td>Tasman</td>
+                    <td>Internet Explorer 5.1</td>
+                    <td class="center">1</td>
+                    <td class="center">C</td>
+                </tr>
+                <tr>
+                    <td>Tasman</td>
+                    <td>Internet Explorer 5.2</td>
+                    <td class="center">1</td>
+                    <td class="center">C</td>
+                </tr>
+                <tr>
+                    <td>Misc</td>
+                    <td>NetFront 3.1</td>
+                    <td class="center">-</td>
+                    <td class="center">C</td>
+                </tr>
+                <tr>
+                    <td>Misc</td>
+                    <td>NetFront 3.4</td>
+                    <td class="center">-</td>
+                    <td class="center">A</td>
+                </tr>
+                <tr>
+                    <td>Misc</td>
+                    <td>Dillo 0.8</td>
+                    <td class="center">-</td>
+                    <td class="center">X</td>
+                </tr>
+                <tr>
+                    <td>Misc</td>
+                    <td>Links</td>
+                    <td class="center">-</td>
+                    <td class="center">X</td>
+                </tr>
+                <tr>
+                    <td>Misc</td>
+                    <td>Lynx</td>
+                    <td class="center">-</td>
+                    <td class="center">X</td>
+                </tr>
+                <tr>
+                    <td>Misc</td>
+                    <td>IE Mobile</td>
+                    <td class="center">-</td>
+                    <td class="center">C</td>
+                </tr>
+                <tr>
+                    <td>Misc</td>
+                    <td>PSP browser</td>
+                    <td class="center">-</td>
+                    <td class="center">C</td>
+                </tr>
+                <tr>
+                    <td>Other browsers</td>
+                    <td>All others</td>
+                    <td class="center">-</td>
+                    <td class="center">U</td>
+                </tr>
+            </tbody>
+                        </table>
+                </div>
+              
+			</div>
+		</div>
+</div>
+</div>
+            <script src="../js/jquery.min.js"></script>
+            <script src="../js/bootstrap.min.js"></script>
+            <script src="../js/jquery.dataTables.min.js"></script>
+            <script src="../js/unicorn.js"></script>
+            <script src="../js/unicorn.tables.js"></script>
+            <script src="../js/jquery.gritter.min.js"></script> 
+			<script>
+            		//container 容器，count 总页数 pageindex 当前页数
+function setPage(container, count, pageindex) {
+  var container = container;
+  var count = count;
+  var pageindex = pageindex;
+  var a = [];
+  //总页数少于10 全部显示,大于10 显示前3 后3 中间3 其余....
+  if (pageindex == 1) {
+    a[a.length] = "<span class=\"fypad\">共<span class=\"fontcor\">20</span>页</span><a href=\"#\" class=\"prev unclick\">Previous</a>";
+  } else {
+    a[a.length] = "<span class=\"fypad\">共<span class=\"fontcor\">20</span>页</span><a href=\"#\" class=\"prev\">Previous</a>";
+  }
+  function setPageList() {
+    if (pageindex == i) {
+      a[a.length] = "<a href=\"#\" class=\"on\">" + i + "</a>";
+    } else {
+      a[a.length] = "<a href=\"#\">" + i + "</a>";
+    }
+  }
+  //总页数小于10
+  if (count <= 10) {
+    for (var i = 1; i <= count; i++) {
+      setPageList();
+    }
+  }
+  //总页数大于10页
+  else {
+    if (pageindex <= 4) {
+      for (var i = 1; i <= 5; i++) {
+        setPageList();
+      }
+      a[a.length] = "...<a href=\"#\">" + count + "</a>";
+    } else if (pageindex >= count - 3) {
+      a[a.length] = "<a href=\"#\">1</a>...";
+      for (var i = count - 4; i <= count; i++) {
+        setPageList();
+      }
+    }
+    else { //当前页在中间部分
+      a[a.length] = "<a href=\"#\">1</a>...";
+      for (var i = pageindex - 2; i <= pageindex + 2; i++) {
+        setPageList();
+      }
+      a[a.length] = "...<a href=\"#\">" + count + "</a>";
+    }
+  }
+  if (pageindex == count) {
+    a[a.length] = "<a href=\"#\" class=\"next unclick\">next</a>";
+  } else {
+    a[a.length] = "<a href=\"#\" class=\"next\">next</a>";
+  }
+  container.innerHTML = a.join("");
+  //事件点击
+  var pageClick = function() {
+    var oAlink = container.getElementsByTagName("a");
+    var inx = pageindex; //初始的页码
+    oAlink[0].onclick = function() { //点击上一页
+      if (inx == 1) {
+        return false;
+      }
+      inx--;
+      setPage(container, count, inx);
+      return false;
+    }
+    for (var i = 1; i < oAlink.length - 1; i++) { //点击页码
+      oAlink[i].onclick = function() {
+        inx = parseInt(this.innerHTML);
+        setPage(container, count, inx);
+        return false;
+      }
+    }
+    oAlink[oAlink.length - 1].onclick = function() { //点击下一页
+      if (inx == count) {
+        return false;
+      }
+      inx++;
+      setPage(container, count, inx);
+      return false;
+    }
+  } ()
+}
+setPage(document.getElementById("fy"),20,6);
+            
+</script>
+	</body>
+</html>

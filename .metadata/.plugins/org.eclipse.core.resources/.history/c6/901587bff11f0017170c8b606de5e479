@@ -1,0 +1,20 @@
+package cn.com.taiji;
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HomeController {
+	@RequestMapping("/")
+	public String home(Model model) {
+/*		User user=(User)session.getAttribute("user");
+		List<Role> role=user.getRoles();
+		List<Menu> menus=	role.get(0).getMenus();*/
+		List<MenuDto> menus = menuService.findRootTree();
+		model.addAttribute("rootMenus", menus);
+		return "index";//semantic
+	}
+}

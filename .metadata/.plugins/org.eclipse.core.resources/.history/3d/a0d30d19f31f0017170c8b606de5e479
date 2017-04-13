@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Unicorn Admin</title>
+<!--/*/<th:block th:include="layout/include::header">/*/-->
+<!--/*/</th:block>/*/-->
+<body>
+		<div id="header" th:include="layout/header::header"></div>
+		<div>
+			<div id="leftnav" th:include="layout/left::menu"></div>
+			<div id="content" th:include="layout/right::right"></div>
+		</div>
+
+</body>
+</html>

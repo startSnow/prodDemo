@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Unicorn Admin</title>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" href="../css/styles.css" />
+		<link rel="stylesheet" href="../css/unicorn.main.css" />
+		<link rel="stylesheet" href="../css/uniform.css" />
+		<link rel="stylesheet" href="../css/select2.css" />		
+		<link rel="stylesheet" href="../css/unicorn.main.css" />
+		<link rel="stylesheet" href="../css/unicorn.grey.css" class="skin-color" />	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+	<body>
+		
+		<div id="header">
+          <div id="in-sub-nav">
+          <div class="in-sub-navimg"> <img src="../img/logo.png"/></div>
+          
+          	<i id="sidebar_btn" class="icona icon-align-justify"></i>
+            <div class="container">
+                <div>
+                  <div id="row_nav" style="width:auto;">
+                    <ul>
+                      <li><a href="tables.html"><i class="icon icon-th"></i>表格</a></li>
+                      <li><a href="form.html"><i class="icon icon-edit"></i>表单</a></li>
+                      <li><a href="index.html" class="active"><i class="icon icon-magnet"></i>界面元素</a></li>
+                      <li><a href="buttons.html"><i class="icon icon-book"></i>附加</a></li>
+                      <li><a href="layout.html"><i class="icon icon-eye-open"></i>布局</a></li>
+                    </ul>
+                  </div>
+                  <div id="search">
+                  	<i class="icon-search icon-white searchtb iconmar"></i>
+            		<div class="searchtext" style="display:none;">
+                    	<input class="test" type="text" placeholder="Search here..." /><button type="submit" class="tip-right" title="Search"><i class="icon-search icon-white"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+		</div>
+
+            
+		<div class="leftnav">
+			<div class="sidebar_close">
+                <ul id="sidebar_close">
+                
+                  <li class="mar_top"><a href="tables.html"><i class="icon icon-th"></i></a></li>
+                  <li class="lihove_pen"><a href="form.html"><i class="icon icon-edit"></i></a>
+                        <ul class="sidebar_closepen">
+                            <li class="bornone"><a href="error403.html">Pencil1</a>	</li>
+                            <li class="bornone"><a href="buttons.html">Pencil2</a>	 </li>
+                            <li class="bornone"><a href="buttons.html">Pencil3</a>	</li>
+                            <li class="bornone"><a href="buttons.html">Pencil4</a>	</li>
+                            <li class="bornone"><a href="buttons.html">Pencil5</a>	</li>
+                        </ul>
+                  
+                  </li>
+                  <li class="lihove active"><a href="index.html"><i class="icon icon-magnet"></i></a>
+                        <ul class="sidebar_closexl">
+                        	<li class="bornone"><a href="error403.html">报错提示</a> </li>
+                            <li class="bornone"><a href="buttons.html">按钮</a> </li>
+                            <li class="bornone"><a href="tree.html">树样式</a></li>
+                            <li class="bornone"><a href="tab.html">选项卡</a></li>
+                            <li class="bornone"><a href="blockquotes.html" class="acli">面包屑</a></li>
+                            <li class="bornone"><a href="search.html">搜索</a></li>
+                            <li class="bornone"><a href="pagination.html">分页</a></li>
+                            <li class="bornone"><a href="lhgdialog.html">弹出层</a></li>
+                            <li class="bornone"><a href="richtext.html">富文本</a></li>
+                            <li class="bornone"><a href="my97datapicker.html">日期</a></li>
+                            <li class="bornone"><a href="lhgdialog.html">弹出层</a></li>
+                            <li class="bornone threemenus"><a href="my97datapicker.html">文件上传<span class="label">2</span></a>
+                            	<ul class="sidebar_closepen_list">
+                                    <li class="bornone"><a href="upload1.html">批量上传</a>	</li>
+                                    <li class="bornone"><a href="upload2.html">限制文件类型</a>	</li>
+                                </ul>
+                            </li>
+                        </ul>
+                  </li>       
+                  <li><a href=""><i class="icon icon-book"></i></a></li>
+                  <li><a href="layout.html"><i class="icon icon-eye-open"></i></a></li>   
+                </ul>
+            </div>
+		<div id="sidebar">
+			<a href="#" class="visible-phone"><i class="icon icon-inbox"></i> Widgets</a>
+
+			<ul id="sidebar_open">
+            	<li class="mar_top"><a href="tables.html" class="borleft"><i class="icon icon-th"></i> <span>表格/列表</span><i class="ft">Tables</i></a></li>
+                <li><a href="form.html" class="borleft"><i class="icon icon-edit"></i> <span>表单</span><i class="ft">Forms</i></a></li>
+				<li class="submenu active">
+					<a href="#" class="borleft"><i class="icon icon-magnet"></i> <span>界面元素</span> <i class="ft">Dashboard</i><span class="label">11</span></a>
+					<ul id="djcd" style="display:block;">
+						<li class="bornone" style="margin-top:10px;"><a href="error403.html">报错提示<i class="ft">error</i></a> </li>
+                        <li class="bornone"><a href="buttons.html">按钮<i class="ft">Buttons</i></a> </li>
+                        <li class="bornone"><a href="tree.html">树样式<i class="ft">Tree</i></a></li>
+                        <li class="bornone"><a href="tab.html">选项卡<i class="ft">Tabs</i></a></li>
+                        <li class="bornone"><a href="blockquotes.html">面包屑<i class="ft">Blockquotes</i></a></li>
+                        <li class="bornone"><a href="search.html">搜索<i class="ft">Tabs</i></a></li>
+                        <li class="bornone"><a href="pagination.html">分页<i class="ft">Pagination</i></a></li>
+                        <li class="bornone"><a href="lhgdialog.html" class="acli">弹出层<i class="ft">Popup</i></a></li>
+                        <li class="bornone"><a href="richtext.html">富文本<i class="ft">Texts</i></a></li>
+                        <li class="bornone"><a href="my97datapicker.html">日期<i class="ft">Date</i></a></li>
+                        <li class="bornone"><a href="upload1.html">文件批量上传<i class="ft">Upload</i></a></li>
+                        <li class="bornone"><a href="upload2.html">限制文件类型<i class="ft">Uploadtype</i></a></li>
+					</ul>
+
+				</li>
+				<li><a href="" class="borleft"><i class="icon icon-book"></i> <span>附加</span><i class="ft">Extra</i></a></li>
+				<li class=""><a href="layout.html" class="borleft"><i class="icon icon-eye-open"></i> <span>布局</span><i class="ft">layout</i></a></li>
+				<li>
+					<a href="#" class="sub borleft"><i class="icon icon-pencil"></i> <span>菜单</span> <i class="ft">Dashboard</i><span class="label">4</span></a>
+					<ul id="ejcd" class="djcd" style="background:#2f3844;">
+						<li class="borsolid"><a href="" class="erji">分类<i class="ft">Classify</i></a> </li>
+                        <li class="borsolid"><a href="#" class="erji yjan">列表<i class="ft">List</i><span class="label">3</span></a> 
+                        	<ul id="sjcd" class="djcd">
+                                <li class="borsolid"><a href="error403.html" class="sanji">版权</a> </li>
+                                <li class="borsolid"><a href="javascript:void:(0);" class="sanji sjdj">按钮<span class="label">3</span></a>
+                                	<ul id="fjcd" class="djcd">
+                                        <li class="borsolid"><a href="error403.html" class="siji">error403</a> </li>
+                                        <li class="borsolid"><a href="" class="siji">按钮</a> </li>
+                                        <li class="borsolid"><a href="" class="siji">按钮</a></li>
+                                    </ul>
+                                 </li>
+                                <li class="borsolid"><a href="" class="sanji">面板</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="borsolid"><a href="" class="erji">面板<i class="ft">Panels</i></a></li>
+                        <li class="borsolid"><a href="" class="erji">选项卡<i class="ft">Tabs</i></a></li>
+					</ul>
+				</li>
+			</ul>
+		
+		</div>
+		</div>
+		
+		<!--<div id="style-switcher">
+			<i class="icon-arrow-left icon-white"></i>
+			<span>Style:</span>
+			<a href="#grey" style="background-color: #555555;border-color: #aaaaaa;"></a>
+			<a href="#blue" style="background-color: #2D2F57;"></a>
+			 <a href="#red" style="background-color: #673232;"></a> 
+		</div>-->
+		
+		<div id="content">
+			<div id="content-header">
+				<h1>弹出层</h1>
+				<div class="btn-group">
+					<a class="btn btn-large tip-bottom" title="Manage Files"><i class="icon-file"></i></a>
+					<a class="btn btn-large tip-bottom" title="Manage Users"><i class="icon-user"></i></a>
+					<a class="btn btn-large tip-bottom" title="Manage Comments"><i class="icon-comment"></i><span class="label label-important">5</span></a>
+					<a class="btn btn-large tip-bottom" title="Manage Orders"><i class="icon-shopping-cart"></i></a>
+				</div>
+			</div>
+			<div id="breadcrumb">
+				<a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 首页</a>
+				<a href="samples.html">模态框</a>
+				<a href="#" class="current">弹出层</a>
+			</div>
+			
+
+
+<!--        
+  *lhgdialog功能的启动代码
+  *@author 马祖胜          
+  *2016.6.6
+  *-->		
+		<div style="border:solid 1px #ddd;">
+							<p></p>
+							<ol>
+							    <li>
+							        <h3>标题 [title]</h3>
+									<p></p>
+				<pre class="prettyprint" id="demo_title">
+				$.dialog({title:'我是新标题'});
+				</pre>
+									<p><button class="runcode" name="demo_title">运行»</button></p>
+								</li>
+							    <li>
+							        <h3>内容 [content]</h3>
+									<p>1. 传入字符串</p>
+				<pre class="prettyprint" id="demo_content">
+				$.dialog({content: '我支持HTML'});
+				</pre>
+									<p><button class="runcode" name="demo_content">运行»</button></p>
+									<p>2. 使用iframe方式加载单独的内容页</p>
+				<pre class="prettyprint" id="demo_content_frm">
+				$.dialog({
+                	width:'1200px',
+                	height: '1800px',
+                	content: 'url:index.html',
+                    });
+				</pre>
+									<p><button class="runcode" name="demo_content_frm">运行»</button></p>
+								</li>
+							    <li>
+							        <h3>确定取消按钮 [ok & cancel]</h3>
+									<p>备注：回调函数this指向扩展接口，如果返回false将阻止对话框关闭</p>
+				<pre class="prettyprint" id="demo_yes_no">
+				$.dialog({
+				    content: '如果定义了回调函数才会出现相应的按钮',
+				    ok: function(){
+				    	this.title('3秒后自动关闭').time(3);
+				        return false;
+				    },
+				    cancelVal: '关闭',
+				    cancel: true /*为true等价于function(){}*/
+				});
+				</pre>
+									<p><button class="runcode" name="demo_yes_no">运行»</button></p>
+								</li>
+								<li>
+							        <h3 >最大化最小化按钮 [max & min]</h3>
+									<p>备注：此参数是用来显示或隐藏最大化最小化按钮</p>
+				<pre class="prettyprint" id="demo_max_min">
+				$.dialog({
+				    content: '不显示最大化和最小化按钮',
+				    max: true,
+				    min: false
+				});
+				</pre>
+									<p><button class="runcode" name="demo_max_min">运行»</button></p>
+								</li>
+								<li>
+							        <h3>自定义按钮 [button]</h3>
+									<p>备注：回调函数this指向扩展接口，如果返回false将阻止对话框关闭；button参数对应的扩展方法名称也是"button"</p>
+				<pre class="prettyprint" id="demo_button">
+				$.dialog({
+				    id: 'testID',
+				    content: 'hello world!',
+				    button: [
+				        {
+				            name: '同意',
+				            callback: function(){
+				                this.content('你同意了')
+				                .button({
+				                    id:'disBtn',
+				                    name:'我变成有效按钮了',
+				                    disabled: false
+				                });
+				                return false;
+				            },
+				            focus: true
+				        },
+				        {
+				            name: '不同意',
+				            callback: function(){
+				                alert('你不同意')
+				            }
+				        },
+				        {
+				            id: 'disBtn',
+				            name: '无效按钮',
+				            disabled: true
+				        },
+				        {
+				            name: '关闭我'
+				        }
+				    ]
+				});
+				</pre>
+									<p><button class="runcode putbtn" name="demo_button">运行»</button></p>
+								</li>
+								<li>
+							        <h3 >设置大小 [width & height]</h3>
+									<p>备注：尺寸可以带单位或使用百分比%</p>
+				<pre class="prettyprint" id="demo_size">
+				$.dialog({
+				    width: '1000px',
+				    height: '800px',
+				    content: 'url:http://www.baidu.com'
+				});
+				</pre>
+									<p><button class="runcode" name="demo_size">运行»</button></p>
+								</li>
+								<li>
+							        <h3>静止定位 [fixed]</h3>
+									<p></p>
+				<pre class="prettyprint" id="demo_fixed">
+				$.dialog({
+				    fixed: true,
+				    content: '请拖动滚动条查看'
+				});
+				</pre>
+									<p><button class="runcode" name="demo_fixed">运行»</button></p>
+								</li>
+								<li>
+							        <h3>自定义坐标 [left & top]</h3>
+									<p>备注：尺寸可以带单位或使用百分比%</p>
+				<pre class="prettyprint" id="demo_position">
+				$.dialog({
+				    left: 100,
+				    top: '60%',
+				    content: '我改变坐标了'
+				});
+				</pre>
+									<p><button class="runcode" name="demo_position">运行»</button></p>
+									<p>创建一个右下角浮动的消息窗口</p>
+				<pre class="prettyprint" id="demo_position2">
+				$.dialog({
+				    id: 'msg',
+				    title: '公告',
+				    content: '欢迎使用lhgdialog窗口!',
+				    width: 200,
+				    height: 100,
+				    left: '100%',
+				    top: '100%',
+				    fixed: true,
+				    drag: false,
+				    resize: false
+				});
+				</pre>
+									<p><button class="runcode" name="demo_position2">运行»</button></p>
+								<li>
+							        <h3>锁屏 [lock & background & opacity]</h3>
+									<p></p>
+				<pre class="prettyprint" id="demo_lock">
+				$.dialog({
+				    lock: true,
+				    content: '中断用户在对话框以外的交互，展示重要操作与消息',
+				    icon: 'error.gif',
+				    ok: function () {
+				        /* 这里要注意多层锁屏一定要加parent参数 */
+				        $.dialog({content: '再来一个锁屏', lock: true, parent:this});
+				        return false;
+				    },
+				    cancel: true
+				});
+				</pre>
+									<p><button class="runcode" name="demo_lock">运行»</button></p>
+								</li>
+								<li>
+							        <h3>定义消息图标 [icon]</h3>
+									<p></p>
+				<pre class="prettyprint" id="demo_icon">
+				$.dialog({
+				    icon: 'success.gif',
+				    content: '我可以定义消息图标哦'
+				});
+				</pre>
+									<p><button class="runcode" name="demo_icon">运行»</button></p>
+								</li>
+								<li>
+							        <h3>内容与边界填充边距 [padding]</h3>
+									<p>备注：注意图片加上width和height，否则出现位置偏移</p>
+				<pre class="prettyprint" id="demo_padding">
+				$.dialog({
+				    id: 'a15',
+				    title: 'Android4.0照片',
+				    lock: true,
+				    content: '&lt;img src="../_doc/images/android.jpg" width="600" height="404" /&gt;',
+				    padding: 0
+				});
+				</pre>
+									<p><button class="runcode" name="demo_padding">运行»</button></p>
+								</li>
+								<li>
+							        <h3>定时关闭的消息 [time]</h3>
+									<p></p>
+				<pre class="prettyprint" id="demo_time">
+				$.dialog({
+				    time: 2,
+				    content: '两秒后关闭'
+				});
+				</pre>
+									<p><button class="runcode" name="demo_time">运行»</button></p>
+								</li>
+								<li>
+							        <h3>不许拖拽 [drag & resize]</h3>
+									<p></p>
+				<pre class="prettyprint" id="demo_drag">
+				$.dialog({
+				    drag: false,
+				    resize: false,
+				    content: '禁止拖拽'
+				});
+				</pre>
+									<p><button class="runcode" name="demo_drag">运行»</button></p>
+								</li>
+								<li>
+							        <h3>防止重复弹出 [id]</h3>
+									<p></p>
+				<pre class="prettyprint" id="demo_id">
+				$.dialog({
+				    id: 'testID2',
+				    content: '再次点击运行看看'
+				});
+				$.dialog({id: 'testID2'}).title('3秒后关闭').time(3);
+				</pre>
+									<p><button class="runcode" name="demo_id">运行»</button></p>
+								</li>
+								<li>
+							        <h3>初始化和关闭回调函数 [init & close]</h3>
+									<p>备注：回调函数中this指向窗口实例对象本身</p>
+				<pre class="prettyprint" id="demo_init_close">
+				$.dialog({
+				    content: '初始化函数执行前窗口的内容',
+				    left: '20%',
+				    init: function(){
+				        alert('正在执行初始化函数，此时你可看到窗口内容没有发生变化');
+				        this.content('我是初始化函数执行后的窗口中的内容');
+				    },
+				    close: function(){
+				        alert('我是窗口关闭前执行的函数，如果返回false将阻止窗口关闭');
+				    }
+				});
+				</pre>
+									<p><button class="runcode" name="demo_init_close">运行»</button></p>
+								</li>
+								<li>
+							        <h3>父窗口对象 [parent]</h3>
+									<p>备注：此参数只用在打开多层窗口都使用遮罩层时才会用到此参数，<b style="color:#f00">注意多层窗口锁屏时一定要加此参数</b></p>
+				<pre class="prettyprint" id="demo_parent">
+				$.dialog({
+				    id: 'LHG1976D',
+				    /* ifrst.html 和 second.html 中的代码请自行查看 */
+				    content: 'url:content/first.html',
+				    lock:true
+				});
+				</pre>
+									<p><button class="runcode" name="demo_parent">运行»</button></p>
+								</li>
+							</ol>
+							<h2>扩展方法演示</h2>
+							<p>备注：扩展方法支持链式操作</p>
+							<ol>
+								<li>
+							        <h3>直接引用返回 [content() & title()]</h3>
+									<p></p>
+				<pre class="prettyprint" id="demo_api_1">
+				var api = $.dialog({
+				    title: '我是对话框',
+				    content: '我是初始化的内容'
+				});
+				api.content('对话框内容被扩展方法改变了').title('提示');
+				</pre>
+									<p><button class="runcode" name="demo_api_1">运行»</button></p>
+								</li>
+								<li>
+							        <h3>刷新跳转页面 [reload()]</h3>
+									<p></p>
+				<pre class="prettyprint" id="demo_api_2">
+				$.dialog({
+				    content: '点确定按钮后将刷新窗口调用页面',
+				    ok: function(){
+				        this.reload();
+				    }
+				});
+				</pre>
+									<p><button class="runcode" name="demo_api_2">运行»</button></p>
+								</li>
+								<li>
+							        <h3>按钮接口演示 [button()]</h3>
+									<p>备注：回调函数如果返回false将阻止对话框关闭</p>
+				<pre class="prettyprint" id="demo_api_3">
+				var dialog = $.dialog({
+				    title: '警告',
+				    content: '点击管理按钮将让删除按钮可用',
+				    width: '20em',
+				    button: [{
+				    	name: '管理',
+				        callback: function () {
+				            this
+				            .content('我更改了删除按钮')
+				            .button({
+				                name: '删除',
+				                disabled: false
+				            })
+				            .lock();
+				            return false;
+				        },
+				        focus: true
+				    }]
+				});
+
+				dialog.button(
+				    {
+				        name: '删除',
+				        callback: function () {
+				            alert('delect')
+				        },
+				        disabled: true
+				    }
+				)
+				</pre>
+									<p><button class="runcode" name="demo_api_3">运行»</button></p>
+								</li>
+								<li>
+							        <h3>通过对话框ID引用 [get()]</h3>
+									<p></p>
+				<pre class="prettyprint" id="demo_api_4">
+				var api1 = $.dialog({
+				    content: '我是窗口中的内容',
+				    id: 'LHG76D'
+				});
+				api1.get('LHG76D',1).content('我改变了窗口内容，并在2秒后关闭').time(2);
+				</pre>
+									<p><button class="runcode" name="demo_api_4">运行»</button></p>
+								</li>
+								<li>
+							        <h3>最大化和最小化 [max() & min()]</h3>
+									<p></p>
+				<pre class="prettyprint" id="demo_api_5">
+				$.dialog({
+				    content: '我现在是最大化窗口，点确定按钮最小化窗口',
+				    id: 'LHG78D',
+				    ok: function(){
+				        this.min(); /* 这里调用了最小化方法 */
+				        return false;
+				    }
+				}).max();
+				</pre>
+									<p><button class="runcode" name="demo_api_5">运行»</button></p>
+								</li>
+								<li>
+							        <h3>标题倒计时</h3>
+									<p></p>
+				<pre class="prettyprint" id="demo_api_6">
+				var timer;
+				$.dialog({
+				    content: '时间越来越少，越来越少..',
+				    init: function () {
+				    	var that = this, i = 5;
+				        var fn = function () {
+				            that.title(i + '秒后关闭');
+				            !i && that.close();
+				            i --;
+				        };
+				        timer = setInterval(fn, 1000);
+				        fn();
+				    },
+				    close: function () {
+				    	clearInterval(timer);
+				    }
+				});
+				</pre>
+									<p><button class="runcode" name="demo_api_6">运行»</button></p>
+								</li>
+								<li>
+							        <h3>关闭不删除内容 [hide() & show()]</h3>
+									<p></p>
+				<pre class="prettyprint" id="demo_api_7">
+				$.dialog({
+				    id: 'show-hide',
+				    content: '关闭后阻止对话框被删除，只隐藏对话框',
+				    close: function () {
+				        this.hide();
+				        return false;
+				    }
+				})
+				</pre>
+									<p><button class="runcode" name="demo_api_7">运行»</button></p>
+								</li>
+							</ol>
+							<h2>外部方法演示</h2>
+							<p></p>
+							<ol>
+								<li>
+							        <h3>$.dialog.alert() 方法</h3>
+									<p></p>
+				<pre class="prettyprint" id="demo_api_10">
+				$.dialog.alert('您正在使用lhgDialog弹出窗口组件。',function(){
+				    alert('谢谢您的使用！');
+				});
+				</pre>
+									<p><button class="runcode" name="demo_api_10">运行»</button></p>
+								</li>
+								<li>
+							        <h3>$.dialog.confirm() 方法</h3>
+									<p></p>
+				<pre class="prettyprint" id="demo_api_11">
+				$.dialog.confirm('你确定要删除这个消息吗？', function(){
+				    $.dialog.tips('执行确定操作');
+				}, function(){
+				    $.dialog.tips('执行取消操作');
+				});
+				</pre>
+									<p><button class="runcode" name="demo_api_11">运行»</button></p>
+								</li>
+								<li>
+							        <h3>$.dialog.prompt() 方法</h3>
+									<p></p>
+				<pre class="prettyprint" id="demo_api_12">
+				$.dialog.prompt('请输入图片网址',
+				    function(val){
+				        $.dialog.tips(val);
+				    },
+				    'http://'
+				);
+				</pre>
+									<p><button class="runcode" name="demo_api_12">运行»</button></p>
+								</li>
+								<li>
+							        <h3>$.dialog.tips() 方法</h3>
+									<p></p>
+				<pre class="prettyprint" id="demo_api_13">
+				/* 下面的只是演示代码，实际应用中一般这样写：
+				 * $.dialog.tips('数据加载中...',600,'loading.gif');
+				 * [这里是你要执行的代码]
+				 * $.dialog.tips('数据加载完毕',1,'success.gif',function(){ 这里写完成后执行的其它代码 });
+				 */
+				$.dialog.tips('数据加载中...',600,'loading.gif');
+
+				setTimeout(function(){
+				    $.dialog.tips('数据加载完毕',1,'tips.gif',function(){alert('加载完成后你要做什么？');});
+				}, 5000 );
+				</pre>
+									<p><button class="runcode" name="demo_api_13">运行»</button></p>
+								</li>
+	
+		</ol>
+
+		</div>
+		
+<!--        
+  *lhgdialog  end
+  *-->	
+		</div>
+
+		
+            
+<script src="../js/jquery.min.js"></script>
+<script src="../js/unicorn.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript" src="../js/lhgdialog/prettify.js"></script>
+<script type="text/javascript" src="../js/lhgdialog/demo.js"></script>
+<script type="text/javascript" src="../js/lhgdialog/lhgdialog.js"></script>	
+
+<script src="../js/jquery.gritter.min.js"></script> 
+<script>
+	$(document).ready(function() {
+        // === jQeury Gritter, a growl-like notifications === //
+			$.gritter.add({
+				title:	'Important Unread messages',
+				text:	'You have 12 unread messages.',
+				image: 	'../img/demo/envelope.png',
+				sticky: false
+			});	
+			$('#gritter-notify .normal').click(function(){
+				$.gritter.add({
+					title:	'Normal notification',
+					text:	'This is a normal notification',
+					sticky: false
+				});		
+			});
+			
+			$('#gritter-notify .sticky').click(function(){
+				$.gritter.add({
+					title:	'Sticky notification',
+					text:	'This is a sticky notification',
+					sticky: true
+				});		
+			});
+			
+			$('#gritter-notify .image').click(function(){
+				var imgsrc = $(this).attr('data-image');
+				$.gritter.add({
+					title:	'Important Unread messages',
+					text:	'You have 12 unread messages.',
+					image: imgsrc,
+					sticky: false
+				});		
+			});
+
+			//三级菜单
+			$('.submenu3').click(function(){
+				var obj =$(this).closest('li').find('.three');
+				//alert(obj.css('display'));
+				if(obj.css('display') == 'none'){
+				 	obj.slideDown();
+				}else{
+					obj.slideUp();
+				}
+			});
+			
+
+    });
+
+</script>
+
+	</body>
+</html>

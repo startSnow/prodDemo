@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title></title>
+</head>
+<body>
+	<div th:fragment="header">
+
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../css/bootstrap-responsive.min.css" />
+		<link rel="stylesheet" href="../css/styles.css" />
+		<link rel="stylesheet" href="../css/unicorn.main.css" />
+		<link rel="stylesheet" href="../css/unicorn.grey.css"
+			class="skin-color" />
+		<link rel="stylesheet" href="../css/uniform.css" />
+		<link rel="stylesheet" href="../css/select2.css" />
+		<link rel="stylesheet" href="css/fullcalendar.css" />
+		<link rel="stylesheet" href="../css/jquery.gritter.css" />
+		<script src="js/excanvas.min.js"></script>
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/jquery.ui.custom.js"></script>
+		<script src="../js/jquery.dataTables.min.js"></script>
+		<script src="../js/unicorn.js"></script>
+		<script src="../js/unicorn.tables.js"></script>
+		<script src="../js/jquery.gritter.min.js"></script>
+	</div>
+</body>
+</html>

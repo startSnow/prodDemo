@@ -1,0 +1,86 @@
+package cn.com.taiji;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+
+@SpringBootApplication
+public class AuthApplication extends WebSecurityConfigurerAdapter{
+
+	public static void main(String[] args) {
+		SpringApplication.run(AuthApplication.class, args);
+	}
+	public void addViewControllers(ViewControllerRegistry registry) {
+		registry.addViewController("/").setViewName("index");
+	}
+	@Bean
+	public ApplicationSecurity applicationSecurity() {
+		return new ApplicationSecurity();
+	}
+
+	@Order(Ordered.HIGHEST_PRECEDENCE)
+	@Configuration
+	protected static class AuthenticationSecurity extends
+			GlobalAuthenticationConfigurerAdapter {
+
+		// @Value("${spring.datasource.url}")
+		// private String url;
+
+		// @Autowired
+		// private JdbcTemplate jt;
+		//
+		@Autowired
+		private DataSource dataSource;
+
+		@Bean
+		public ShaPasswordEncoder passwordEncoder() {
+			// return new BCryptPasswordEncoder();
+			return new ShaPasswordEncoder(1);
+		}
+
+		@Override
+		public void init(AuthenticationManagerBuilder auth) throws Exception {
+//			// @formatter:off
+//			auth.jdbcAuthentication()
+//					.dataSource(dataSource)
+//					.passwordEncoder(passwordEncoder())
+//					.groupAuthoritiesByUsername(
+//							"select g.code, g.name, ga.role_code from user_group g, user_account_group gm, user_group_role ga where gm.user_code = ? and g.code = ga.group_code and g.code = gm.group_code and g.enabled = true")
+//					.authoritiesByUsernameQuery(
+//							"select x.user_code, x.role_code from user_account_role x, user_role r where x.role_code=r.code and r.enabled = true and x.user_code=?")
+//					.usersByUsernameQuery(
+//							"select code, password, enabled from user_account where code=? and enabled = true");
+			// @formatter:off
+			 auth.inMemoryAuthentication().withUser("admin").password("admin")
+			 .roles("ADMIN", "USER").and().withUser("user")
+			 .password("user").roles("USER");
+			// @formatter:on
+		}
+	}
+
+	@Order(Ordered.LOWEST_PRECEDENCE - 8)
+	protected static class ApplicationSecurity extends
+			WebSecurityConfigurerAdapter {
+
+		@Override
+		protected void configure(HttpSecurity http) throws Exception {
+			// @formatter:off
+			http.authorizeRequests()
+			      .antMatchers("/manage/**").hasRole("ADMIN")  // for actuator
+					  .antMatchers("/some").permitAll()    // for test
+					  .antMatchers("/test/**").permitAll()
+					  .antMatchers("/login").permitAll()   // for login
+					.anyRequest().fullyAuthenticated()      // all others need login
+					  .and()
+					.formLogin().loginPage("/login").failureUrl("/login?error") // login config
+					  .and()
+					.logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")) //logout config
+			      .and()
+			    .exceptionHandling().accessDeniedPage("/access?error");  // exception
+			http.csrf().disable();
+			// @formatter:on
+		}
+
+	}
+}

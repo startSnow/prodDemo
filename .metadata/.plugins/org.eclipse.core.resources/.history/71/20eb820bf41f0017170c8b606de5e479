@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title></title>
+</head>
+<body>
+	<div th:fragment="include">
+		<link rel="stylesheet" href="theme/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="theme/css/bootstrap-responsive.min.css" />
+		<link rel="stylesheet" href="theme/css/styles.css" />
+		<link rel="stylesheet" href="theme/css/unicorn.main.css" />
+		<link rel="stylesheet" href="theme/css/unicorn.grey.css"
+			class="skin-color" />
+		<link rel="stylesheet" href="theme/css/uniform.css" />
+		<link rel="stylesheet" href="theme/css/select2.css" />
+		<link rel="stylesheet" href="theme/css/jquery.gritter.css" />
+		
+	
+		<script src="theme/js/jquery.min.js"></script>
+		<script src="theme/js/bootstrap.min.js"></script>
+		<script src="theme/js/jquery.dataTables.min.js"></script>
+		<script src="theme/js/unicorn.js"></script>
+		<script src="theme/js/unicorn.tables.js"></script>
+		<script src="theme/js/jquery.gritter.min.js"></script>
+		<script type="text/javascript"
+			src="theme/js/handlebars-1.0.0.beta.6.js"></script>
+			<link rel="stylesheet" href="theme/css/bootstrap-datetimepicker.min.css" />
+		<script src="theme/js/datetimepicker/bootstrap-datetimepicker.js"></script>
+		<script src="theme/js/datetimepicker/bootstrap-datetimepicker.fr.js"></script>
+		<script
+			src="theme/js/datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+<script type="text/javascript" src="theme/js/handlebars-1.0.0.beta.6.js"></script>
+		<script type="text/javascript" src="theme/js/lhgdialog/prettify.js"></script>
+		<script type="text/javascript" src="theme/js/lhgdialog/demo.js"></script>
+		<script type="text/javascript" src="theme/js/lhgdialog/lhgdialog.js"></script>
+		<script type="text/javascript" src="theme/js/pagination.js"></script>
+		<script src="theme/js/jsnew/formValidator-4.0.1.min.js"></script>
+<script src="theme/js/jsnew/formValidatorRegex.js"></script>
+	</div>
+</body>
+</html>

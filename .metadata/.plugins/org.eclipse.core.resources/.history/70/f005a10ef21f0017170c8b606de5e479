@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title></title>
+</head>
+<body>
+<div th:fragment="menu">
+    <script th:inline="javascript">
+/*<![CDATA[*/
+  //选中的菜单ID
+  var selectedMenuId;
+  //菜单树
+  var indexMenuTreeView; 
+ $(document).ready(function() {
+              
+      //菜单树数据源
+      var indexMenuTreeViewDataSource = new kendo.data.HierarchicalDataSource({
+    	  transport: {
+    	    read: {
+    	    	 url: "menu-tree.json",
+    	      dataType: "json",
+    	      data: { q: "html5" },
+    	      type: "POST"
+    	    }
+    	  },
+    	  schema: {
+    		data: "menuTree",
+    	    model: {
+    	      id: "id",
+    	      children: "items",
+    	      hasChildren: true
+    	    }
+    	  }
+    	});
+    //   console.log(indexMenuTreeViewDataSource);
+      //菜单树
+       indexMenuTreeView = $('#indexMenuTreeView').kendoTreeView({
+         dataSource: indexMenuTreeViewDataSource,
+         dataTextField: "text",
+          select:function(e)
+          {
+          	var data = this.dataItem(e.node);
+        	selectedMenuId = data.id;
+          	var href = data.href;
+          	$("#right").load(href);
+          }
+         }).data("kendoTreeView");
+     
+ });
+  /*]]>*/
+  </script>
+	<div class="pane-content">
+		<div id="indexMenuTreeView"></div>
+	</div>
+</div>
+</body>
+</html>

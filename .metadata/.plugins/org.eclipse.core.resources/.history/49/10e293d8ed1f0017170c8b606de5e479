@@ -1,0 +1,12 @@
+package cn.com.taiji;
+
+import org.springframework.stereotype.Controller;
+/**
+ * 
+ * @author chixue
+ *
+ */
+@Controller
+public class HomeController {
+
+}

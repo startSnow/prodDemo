@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<meta name="_csrf_parameter" th:content="${_csrf.parameterName}"
+	th:if="${_csrf}" />
+<meta name="_csrf_header" th:content="${_csrf.headerName}"
+	th:if="${_csrf}" />
+<meta name="_csrf" th:content="${_csrf.token}" th:if="${_csrf}" />
+<title>太极开源平台</title>
+<!--/*/<th:block th:include="layout/include::include">/*/-->
+<!--/*/</th:block>/*/-->
+</head>
+<body>
+	<div>
+		<div id="header" th:include="layout/header::header"></div>
+		<div>
+			<div id="leftnav" th:include="layout/left::menu"></div>
+			<div id="content" th:include="layout/right::right"></div>
+		</div>
+	</div>
+
+</body>
+</html>
